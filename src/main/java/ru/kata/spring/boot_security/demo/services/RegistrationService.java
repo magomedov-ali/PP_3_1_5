@@ -10,6 +10,6 @@ public interface RegistrationService {
 
     void register(User user);
 
-    void update(int id, User updatedUser);
+    void update(User updatedUser);
 
 }

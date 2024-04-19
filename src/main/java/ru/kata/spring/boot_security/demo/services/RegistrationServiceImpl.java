@@ -27,8 +27,7 @@ public class RegistrationServiceImpl implements RegistrationService {
     }
 
     @Override
-    public void update(int id, User updatedUser) {
-        updatedUser.setId(id);
+    public void update(User updatedUser) {
         updatedUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
         userRepository.save(updatedUser);
     }

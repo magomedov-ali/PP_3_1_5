@@ -18,7 +18,7 @@ public interface UserService extends UserDetailsService {
 
     Set<User> findAllFetchRoles();
 
-    User findOne(int id);
+    User findById(int id);
 
     @Transactional
     void save(User user);
