@@ -20,10 +20,12 @@ async function allUsers() {
                             <td>${user.email}</td>
                             <td>${user.roles.map(role => " " + role.name)}</td>
                             <td>
-                                <button type="button" class="btn btn-info" data-toggle="modal" id="buttonEdit" data-action="edit" data-id="${user.id}" data-target="#edit">Edit</button>
+                                <button type="button" class="btn btn-info" data-toggle="modal"
+                                id="buttonEdit" data-action="edit" data-id="${user.id}" data-target="#edit">Edit</button>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-danger" data-toggle="modal" id="buttonDelete" data-action="delete" data-id="${user.id}" data-target="#delete">Delete</button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                id="buttonDelete" data-action="delete" data-id="${user.id}" data-target="#delete">Delete</button>
                             </td>
                         </tr>)`;
                 table.append(users);
@@ -146,7 +148,7 @@ async function viewDeleteModal(id) {
 
 async function getUser(id) {
 
-    let url = "http://localhost:8080/admin" + id;
+    let url = "http://localhost:8080/admin/" + id;
     let response = await fetch(url);
     return await response.json();
 }

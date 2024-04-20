@@ -80,7 +80,6 @@
 
                     <div class="container-fluid" style="padding-right: 0; padding-left: 0;">
                         <div class="tab-content">
-
                             <div class="tab-pane fade show active" role="tabpanel" id="allUsers">
                                 <div class="card">
                                     <h3 class="card-header">All users</h3>
@@ -112,7 +111,7 @@
                                         <div class="container-fluid">
                                             <div class="row justify-content-center align-items-center">
                                                 <div class="col-lg-3">
-                                                    <form name="formAddNewUser" id="formAddNewUser">
+                                                    <form name="formAddNewUser" id="new-user-form">
                                                         <div class="form-group text-center">
                                                             <label for="usernameNewUser" class="font-weight-bold ">Username</label>
                                                             <input type="text" class="form-control" required name="username"
@@ -197,22 +196,19 @@
                 <div class="modal-body" style="padding-left: 120px; padding-right: 120px;">
                     <div class="form-group text-center">
                         <label for="id" class="font-weight-bold">ID</label>
-                        <input class="form-control form-control-sm" id="id" name="id" readonly th:value="*{id}"
-                               type="text">
+                        <input class="form-control form-control-sm" id="id" name="id" readonly type="text">
                     </div>
                     <div class="form-group text-center">
                         <label for="username" class="font-weight-bold">Username</label>
-                        <input class="form-control form-control-sm" id="username" name="username"
-                               th:value="*{username}" type="text">
+                        <input class="form-control form-control-sm" id="username" name="username" type="text">
                     </div>
                     <div class="form-group text-center">
                         <label for="age" class="font-weight-bold">Age</label>
-                        <input class="form-control form-control-sm" id="age" name="age" th:value="*{age}" type="text">
+                        <input class="form-control form-control-sm" id="age" name="age" type="number">
                     </div>
                     <div class="form-group text-center">
                         <label for="email" class="font-weight-bold">Email</label>
-                        <input class="form-control form-control-sm" id="email" name="email" th:value="*{email}"
-                               type="text">
+                        <input class="form-control form-control-sm" id="email" name="email" type="email">
                     </div>
                     <div class="form-group text-center">
                         <label for="password" class="font-weight-bold">Password</label>
@@ -249,23 +245,19 @@
                 <div class="modal-body" style="padding-left: 120px; padding-right: 120px;">
                     <div class="form-group text-center">
                         <label for="deleteID" class="font-weight-bold">ID</label>
-                        <input class="form-control form-control-sm" id="deleteID" name="id" readonly th:value="*{id}"
-                               type="text">
+                        <input class="form-control form-control-sm" id="deleteID" name="id" readonly type="text">
                     </div>
                     <div class="form-group text-center">
                         <label for="deleteUsername" class="font-weight-bold">Username</label>
-                        <input class="form-control form-control-sm" id="deleteUsername" Name="username" readonly
-                               th:value="*{username}" type="text">
+                        <input class="form-control form-control-sm" id="deleteUsername" Name="username" readonly type="text">
                     </div>
                     <div class="form-group text-center">
                         <label for="deleteAge" class="font-weight-bold">Age</label>
-                        <input class="form-control form-control-sm" id="deleteAge" name="age" readonly th:value="*{age}"
-                               type="text">
+                        <input class="form-control form-control-sm" id="deleteAge" name="age" readonly type="text">
                     </div>
                     <div class="form-group text-center">
                         <label for="deleteEmail" class="font-weight-bold">Email</label>
-                        <input class="form-control form-control-sm" id="deleteEmail" name="email" readonly
-                               th:value="*{email}" type="text">
+                        <input class="form-control form-control-sm" id="deleteEmail" name="email" readonly type="text">
                     </div>
                     <div class="form-group text-center">
                         <label for="deleteRolesUser" class="font-weight-bold">Role</label>
